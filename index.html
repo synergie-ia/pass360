@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portail ECTI Formation</title>
+  <title>Passerelle 360</title>
   <style>
     /* Reset et styles de base */
     * {
@@ -14,56 +14,53 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      background: linear-gradient(135deg, #009EDE 0%, #0033A0 100%);
+      background: white;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
 
-    /* En-tête - TEXTE sans bandeau */
+    /* En-tête */
     .hero {
       background: transparent;
-      color: white;
-      padding: 20px 20px 20px 20px;
+      color: #2d3748;
+      padding: 40px 20px 20px 20px;
       text-align: center;
       position: relative;
     }
 
-    /* Titre en BLANC avec ombre */
+    /* Titre en NOIR */
     .hero h1 {
       font-size: 2em;
       font-weight: 700;
       margin-bottom: 10px;
       margin-top: 20px;
-      color: white;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+      color: #2d3748;
     }
 
-    /* Sous-titre en BLANC avec ombre */
+    /* Sous-titre en NOIR */
     .subtitle {
       font-size: 1.15em;
-      opacity: 0.95;
       font-weight: 400;
-      color: white;
-      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+      color: #4a5568;
     }
 
-    /* Container - 2 colonnes */
+    /* Container - 2 colonnes avec plus d'espace */
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 20px 20px;
+      padding: 60px 20px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 40px;
       flex: 1;
     }
 
     /* Cartes principales */
     .card {
       background: white;
-      border-radius: 16px;
-      padding: 25px 15px;
+      border-radius: 20px;
+      padding: 40px 20px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
       transition: all 0.3s ease;
@@ -74,7 +71,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 180px;
+      min-height: 200px;
       position: relative;
     }
 
@@ -85,35 +82,34 @@
 
     /* Icônes principales - TRÈS GRANDES */
     .card-icon {
-      font-size: 3.5em;
-      margin-bottom: 15px;
+      font-size: 4em;
+      margin-bottom: 20px;
     }
 
     /* Polices AGRANDIES */
     .card-title {
-      font-size: 1.05em;
+      font-size: 1.2em;
       font-weight: 600;
       line-height: 1.2;
       color: white;
     }
 
-    /* DÉGRADÉS pour les 2 boutons principaux */
+    /* COULEURS de la capture d'écran */
     .card-orientation {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      background: #41B6E6;
     }
 
     .card-transition {
-      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      background: #0072C6;
     }
 
-    /* Footer - TEXTE sans bandeau */
+    /* Footer */
     .footer {
       background: transparent;
-      color: white;
+      color: #718096;
       padding: 25px 20px;
       text-align: center;
-      margin-top: 60px;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      margin-top: 40px;
     }
 
     .footer p {
@@ -124,36 +120,37 @@
     /* Responsive */
     @media (max-width: 768px) {
       .hero h1 {
-        font-size: 1.4em;
+        font-size: 1.6em;
         margin-top: 15px;
       }
       
       .subtitle {
-        font-size: 0.9em;
+        font-size: 1em;
       }
       
       .container {
         grid-template-columns: 1fr;
-        padding: 15px 15px;
+        padding: 30px 15px;
+        gap: 25px;
       }
       
       .card {
-        min-height: 150px;
-        padding: 20px 12px;
+        min-height: 170px;
+        padding: 30px 15px;
       }
       
       .card-icon {
-        font-size: 3em;
+        font-size: 3.5em;
       }
       
       .card-title {
-        font-size: 0.95em;
+        font-size: 1.1em;
       }
     }
 
     /* Accessibilité */
     .card:focus {
-      outline: 3px solid #667eea;
+      outline: 3px solid #41B6E6;
       outline-offset: 3px;
     }
   </style>
