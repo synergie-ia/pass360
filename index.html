@@ -72,10 +72,13 @@
       transform: translateY(-8px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
-    /* Icônes principales - TRÈS GRANDES */
-    .card-icon {
-      font-size: 5em;
+    /* Images principales - TRÈS GRANDES */
+    .card-image {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
       margin-bottom: 25px;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
     }
     /* Polices AGRANDIES */
     .card-title {
@@ -125,8 +128,9 @@
         padding: 40px 20px;
       }
       
-      .card-icon {
-        font-size: 4em;
+      .card-image {
+        width: 100px;
+        height: 100px;
       }
       
       .card-title {
@@ -147,11 +151,11 @@
   </div>
   <div class="container">
     <a href="https://synergie-ia.github.io/pass-orientation/" class="card card-orientation">
-      <div class="card-icon">🎓</div>
+      <img src="orientation.png" alt="Orientation scolaire" class="card-image">
       <div class="card-title">Orientation scolaire et professionnelle</div>
     </a>
     <a href="https://synergie-ia.github.io/pass-transition/" class="card card-transition">
-      <div class="card-icon">💼</div>
+      <img src="transition.png" alt="Transition professionnelle" class="card-image">
       <div class="card-title">Transition et mobilité professionnelle</div>
     </a>
   </div>
